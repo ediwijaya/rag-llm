@@ -1,0 +1,12 @@
+[project]
+name = "rag-llm"
+version = "0.1.0"
+description = "Playground for hand-on with RAG"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.2.12",
+    "langgraph>=1.1.2",
+    "langsmith>=0.7.18",
+    "weaviate-client[agents]>=4.20.4",
+]
