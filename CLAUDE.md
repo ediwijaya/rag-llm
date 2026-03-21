@@ -27,10 +27,12 @@ docker compose down                                           # stop services
 ## Architecture
 
 **Two-service Docker setup** ([docker-compose.yml](docker-compose.yml)):
+
 - **Weaviate** (port 8080/50051): vector database with `text2vec-ollama` and `generative-ollama` modules enabled
 - **Ollama** (port 11434): local model server; Weaviate communicates with it at `http://ollama:11434` inside Docker
 
 **Two distinct model roles** — these are not interchangeable:
+
 - **Embedding model** (`nomic-embed-text`): converts text to vectors for semantic search — configured via `Configure.Vectors.text2vec_ollama()`
 - **Generative model** (`llama3.2` / `llama4:scout`): generates answers from retrieved context — configured via `Configure.Generative.ollama()`
 
