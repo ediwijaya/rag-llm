@@ -10,6 +10,8 @@ dependencies = [
     "langgraph>=1.1.2",
     "langsmith>=0.7.18",
     "ollama>=0.6.1",
+    "pandas>=3.0.1",
     "python-dotenv>=1.2.2",
+    "tqdm>=4.67.3",
     "weaviate-client[agents]>=4.20.4",
 ]
