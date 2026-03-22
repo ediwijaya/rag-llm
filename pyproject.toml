@@ -9,5 +9,6 @@ dependencies = [
     "langchain>=1.2.12",
     "langgraph>=1.1.2",
     "langsmith>=0.7.18",
+    "python-dotenv>=1.2.2",
     "weaviate-client[agents]>=4.20.4",
 ]
